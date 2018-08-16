@@ -13,7 +13,7 @@ def rollDice(win,loss):
     num = random.randrange(1,6)
 
 
-    guess = input('Guess a number in the range 1-6: ')
+    guess = int(input('Guess a number in the range 1-6: '))
 
     if num==guess:
         print('You have guessed correctly the answer is: ',num)
