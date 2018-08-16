@@ -19,15 +19,16 @@ def rollDice(win,loss):
         print('You have guessed correctly the answer is: ',num)
         win+=1
     else:
-        print('you have guessed incorrectly the correct answer is:\t', num)
+        print('you have guessed incorrectly the correct answer is: ', num)
         loss+=1
 
-    choice = input(' would you like to play again: \n Y for yes: ')
-    if choice == 'Y' or 'y':
+    choice = input(' would you like to play again \n Y for yes any other character for no: ')
+    
+    if choice == 'Y' or choice == 'y':
         rollDice(win,loss)
-    else:
-        print('you have won: ', win, 'games')
-        print('you have lost: ',loss, 'games')
-        return    
+
+    print('you have won: ', win, 'games')
+    print('you have lost: ',loss, 'games')
+    return    
 
 rollDice(win,loss)
